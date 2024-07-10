@@ -1,0 +1,16 @@
+D:\GOFINSIGHTS\Backend\Notification\Notification\Notification.Service.Abstractions\bin\Debug\net8.0\Notification.Service.Abstractions.deps.json
+D:\GOFINSIGHTS\Backend\Notification\Notification\Notification.Service.Abstractions\bin\Debug\net8.0\Notification.Service.Abstractions.dll
+D:\GOFINSIGHTS\Backend\Notification\Notification\Notification.Service.Abstractions\bin\Debug\net8.0\Notification.Service.Abstractions.pdb
+D:\GOFINSIGHTS\Backend\Notification\Notification\Notification.Service.Abstractions\bin\Debug\net8.0\Notification.Domain.dll
+D:\GOFINSIGHTS\Backend\Notification\Notification\Notification.Service.Abstractions\bin\Debug\net8.0\Notification.Domain.pdb
+D:\GOFINSIGHTS\Backend\Notification\Notification\Notification.Service.Abstractions\obj\Debug\net8.0\Notification.Service.Abstractions.csproj.AssemblyReference.cache
+D:\GOFINSIGHTS\Backend\Notification\Notification\Notification.Service.Abstractions\obj\Debug\net8.0\Notification.Service.Abstractions.GeneratedMSBuildEditorConfig.editorconfig
+D:\GOFINSIGHTS\Backend\Notification\Notification\Notification.Service.Abstractions\obj\Debug\net8.0\Notification.Service.Abstractions.AssemblyInfoInputs.cache
+D:\GOFINSIGHTS\Backend\Notification\Notification\Notification.Service.Abstractions\obj\Debug\net8.0\Notification.Service.Abstractions.AssemblyInfo.cs
+D:\GOFINSIGHTS\Backend\Notification\Notification\Notification.Service.Abstractions\obj\Debug\net8.0\Notification.Service.Abstractions.csproj.CoreCompileInputs.cache
+D:\GOFINSIGHTS\Backend\Notification\Notification\Notification.Service.Abstractions\obj\Debug\net8.0\Notification.Service.Abstractions.sourcelink.json
+D:\GOFINSIGHTS\Backend\Notification\Notification\Notification.Service.Abstractions\obj\Debug\net8.0\Notifica.81D6837E.Up2Date
+D:\GOFINSIGHTS\Backend\Notification\Notification\Notification.Service.Abstractions\obj\Debug\net8.0\Notification.Service.Abstractions.dll
+D:\GOFINSIGHTS\Backend\Notification\Notification\Notification.Service.Abstractions\obj\Debug\net8.0\refint\Notification.Service.Abstractions.dll
+D:\GOFINSIGHTS\Backend\Notification\Notification\Notification.Service.Abstractions\obj\Debug\net8.0\Notification.Service.Abstractions.pdb
+D:\GOFINSIGHTS\Backend\Notification\Notification\Notification.Service.Abstractions\obj\Debug\net8.0\ref\Notification.Service.Abstractions.dll
