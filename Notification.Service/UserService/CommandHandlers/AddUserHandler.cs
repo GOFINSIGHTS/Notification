@@ -2,7 +2,7 @@
 using MediatR;
 using Notification.Domain.Entities;
 using Notification.Domain.EntitiesDTO;
-using Notification.Service.Abstractions.Repositories.Interfaces;
+using Notification.Service.Abstractions.Repositories.Abstractions;
 using Notification.Service.UserService.Commands;
 using System;
 using System.Collections.Generic;

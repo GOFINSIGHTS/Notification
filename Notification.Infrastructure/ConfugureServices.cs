@@ -12,7 +12,7 @@ namespace Notification.Infrastructure
         public static IServiceCollection AddInfrastructureServices(this IServiceCollection services, IConfiguration configuration)
         {
             var portString = configuration["PostgresPort"];
-            portString = string.IsNullOrEmpty(portString) ? "5432" : portString;
+            portString = string.IsNullOrEmpty(portString) ? "6432" : portString;
             int port = int.Parse(portString);
 
             var conStrBuilder = new NpgsqlConnectionStringBuilder(configuration.GetConnectionString("NotificationContext"))

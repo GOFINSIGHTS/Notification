@@ -9,7 +9,7 @@ using Swashbuckle.AspNetCore.Annotations;
 namespace Notification.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     public class UserController(IMapper mapper, ISender sender) : ControllerBase
     {
         private readonly IMapper _mapper = mapper ?? throw new ArgumentNullException(nameof(mapper), "Uninitialized property");
@@ -30,9 +30,7 @@ namespace Notification.Controllers
         public async Task<ActionResult> AddUser([FromBody] UserModel userModel)
         {
             var userDto = _mapper.Map<UserDto>(userModel);
-
             await _sender.Send(new AddUserAsyncCommand(userDto));
-
             return Created();
         }
     }

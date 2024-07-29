@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Notification.Domain.Abstractions;
 using Notification.Service.Abstractions.Interfaces;
-using Notification.Service.Abstractions.Repositories.Interfaces.Abstractions;
+using Notification.Service.Abstractions.Repositories.Abstractions.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;

@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Notification.Service.Abstractions.Repositories.Interfaces.Abstractions
+namespace Notification.Service.Abstractions.Repositories.Abstractions.Interfaces
 {
     /// <summary>
     /// Repository for reading and writing entities of type T.

@@ -2,7 +2,7 @@
 using Notification.Mapping;
 using Notification.Service.Mapping;
 using Notification.Infrastructure;
-using Notification.Service.Abstractions.Repositories.Interfaces;
+using Notification.Service.Abstractions.Repositories.Abstractions;
 using Notification.Infrastructure.Implementation.Repositories;
 using MediatR;
 using Notification.Domain.EntitiesDTO;

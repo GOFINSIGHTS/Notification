@@ -9,17 +9,39 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddServices(builder.Configuration);
 
 builder.Services.AddControllers();
-var policy = "localhost";
+
+var devPolicy = "localhost";
+var prodPolicy = "prodCorsPolicy";
+
+var allowedOrigins = builder.Configuration.GetValue<string>("AllowedOrigins")?.Split(',');
 
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy(name: policy,
+    options.AddPolicy(name: devPolicy,
         builder =>
         {
             builder.WithOrigins("http://localhost:3000")
             .AllowAnyMethod()
             .AllowAnyHeader()
             .SetIsOriginAllowedToAllowWildcardSubdomains();
+        });
+
+    options.AddPolicy(name: prodPolicy,
+        builder =>
+        {
+            if (allowedOrigins != null && allowedOrigins.Length > 0)
+            {
+                builder.WithOrigins(allowedOrigins)
+                .AllowAnyMethod()
+                .AllowAnyHeader()
+                .SetIsOriginAllowedToAllowWildcardSubdomains();
+            }
+            else
+            {
+                builder.AllowAnyOrigin()
+                       .AllowAnyMethod()
+                       .AllowAnyHeader();
+            }
         });
 });
 
@@ -32,15 +54,31 @@ builder.Services.AddSwaggerGen(opt =>
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+Console.WriteLine($"Current Environment: {app.Environment.EnvironmentName}");
+Console.WriteLine($"Is Development: {app.Environment.IsDevelopment()}");
+if (allowedOrigins is not null)
+{
+    foreach (var item in allowedOrigins)
+    {
+        Console.WriteLine(item);
+    }
+}
+
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
+    app.UseCors(devPolicy);
 }
-app.UseCors(policy);
+else
+{
+    app.UseCors(prodPolicy);
+}
 
-app.UseHttpsRedirection();
+//if (!app.Environment.IsDevelopment())
+//{
+//    app.UseHttpsRedirection();
+//}
 
 app.UseExceptionHandlerMiddleware();
 
